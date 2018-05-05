@@ -1,0 +1,86 @@
+package: .
+import:
+- package: github.com/MichaelTJones/walk
+- package: github.com/dustin/go-broadcast
+- package: github.com/gin-contrib/sse
+- package: github.com/gin-gonic/autotls
+- package: github.com/gin-gonic/gin
+  subpackages:
+  - binding
+  - json
+  - render
+- package: github.com/go-sql-driver/mysql
+- package: github.com/golang/protobuf
+  subpackages:
+  - conformance/internal/conformance_proto
+  - jsonpb
+  - proto
+  - proto/test_proto
+  - protoc-gen-go/descriptor
+  - protoc-gen-go/generator
+  - protoc-gen-go/generator/internal/remap
+  - protoc-gen-go/grpc
+  - protoc-gen-go/plugin
+  - ptypes/any
+  - ptypes/duration
+  - ptypes/struct
+  - ptypes/timestamp
+  - ptypes/wrappers
+- package: github.com/jessevdk/go-assets
+- package: github.com/json-iterator/go
+- package: github.com/manucorporat/stats
+- package: github.com/mattn/go-isatty
+- package: github.com/thinkerou/favicon
+- package: github.com/ugorji/go
+  subpackages:
+  - codec
+- package: github.com/uudashr/gopkgs
+- package: golang.org/x/crypto
+  subpackages:
+  - acme
+  - acme/autocert
+  - bcrypt
+  - blake2b
+  - blowfish
+  - cast5
+  - cryptobyte/asn1
+  - curve25519
+  - ed25519
+  - ed25519/internal/edwards25519
+  - internal/chacha20
+  - nacl/secretbox
+  - openpgp/armor
+  - openpgp/elgamal
+  - openpgp/errors
+  - openpgp/packet
+  - openpgp/s2k
+  - pbkdf2
+  - pkcs12/internal/rc2
+  - poly1305
+  - salsa20/salsa
+  - ssh
+- package: golang.org/x/sync
+  subpackages:
+  - errgroup
+- package: golang.org/x/sys
+  subpackages:
+  - cpu
+  - unix
+  - windows
+- package: google.golang.org/appengine
+  subpackages:
+  - cloudsql
+- package: google.golang.org/genproto
+  subpackages:
+  - protobuf/field_mask
+- package: gopkg.in/go-playground/validator.v8
+- package: gopkg.in/yaml.v2
+testImport:
+- package: github.com/stretchr/testify
+  subpackages:
+  - assert
+- package: golang.org/x/net
+  subpackages:
+  - context
+- package: gopkg.in/check.v1
+- package: gopkg.in/go-playground/assert.v1
